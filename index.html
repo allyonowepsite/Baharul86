@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Yono App Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  ⚡ All Yono App Store ⚡
+</div>
+
+<div class="container">
+  <div id="home" class="tab active"></div>
+
+  <div id="detail" class="tab">
+    <div class="card">
+      <div class="app-header">
+        <img id="dImg" class="big-icon">
+        <div class="title-area">
+          <h1 id="dName"></h1>
+          <a id="dSubtitleLink" class="subtitle-link" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-left">
+          <div class="stat-item" id="dRatingStat"></div>
+        </div>
+        <div class="stat-middle">
+          <div class="stat-item" id="dSizeStat"></div>
+        </div>
+        <div class="stat-right">
+          <div class="stat-stack">
+            <div class="stat-item" id="dDownloadsStat"></div>
+            <div class="stat-item" id="dBonusStat"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-grid" id="dInfoGrid"></div>
+
+      <div class="action-row">
+        <button class="detail-download" id="dDownload">
+          ⬇ DOWNLOAD <span id="dAppName"></span> APK
+        </button>
+        <button class="pink-black-share" onclick="shareWithFriends()">📤 Share</button>
+      </div>
+
+      <div id="dTags"></div>
+      <div id="dLongDesc" class="desc-long"></div>
+    </div>
+
+    <div class="card">
+      <h3>📱 All Available Apps</h3>
+      <div id="allAppsList"></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  © 2026 All Yono App Store
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
